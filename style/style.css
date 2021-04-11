@@ -1,0 +1,34 @@
+#about{
+    background-color: rgba(59, 58, 53, 0.836);
+    color: whitesmoke;
+
+}
+#contact{
+
+}
+
+footer{
+    background-color: rgba(59, 58, 53, 0.836);
+    color: whitesmoke;
+}
+
+.container{
+    text-align: center;
+   
+}
+
+.content{
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.center{
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 10px;
+}
+.section input,button{
+    width: 600px;
+}
