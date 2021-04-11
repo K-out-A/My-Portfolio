@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meter-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("myOverlay").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+              document.getElementById("myOverlay").style.display = "none";
+            }
+            
+            // Modal Image Gallery
+            function onClick(element) {
+              document.getElementById("img01").src = element.src;
+              document.getElementById("modal01").style.display = "block";
+              var captionText = document.getElementById("caption");
+              captionText.innerHTML = element.alt;
+            }
+            
+        </script>
+
+        <!-- Sidebar/menu -->
+        <nav class="" style="" id="mySidebar"><br>
+            <h3 class=""><b>Kota<br>Takahashi</b></h3>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+            <a href="#" onclick="w3_close()" class="">PORTFOLIO</a>
+            <a href="#about" onclick="w3_close()" class="">ABOUT ME</a>
+            <a href="#contact" onclick="w3_close()" class="">CONTACT</a>
+        </nav>
+        <!-- About -->
+        <div class="container" id="about">
+            <div class="content" style="max-width:600px">
+                <h4 class="center"><b>About Me</b></h4>
+                <img src="" alt="Me" class="" width="600" height="650">
+                <div class="" style="">
+                <h4>高橋　滉太</h4>
+                <p>秋田県立大学大学院　システム科学技術研究科　機械知能システム学専攻に在学中。
+                    大学の講義にてプログラミングの将来性に魅力を感じ、現在は農業の課題をITで解決するスマート農業に関する研究に励んでいます。
+                    また学外では、プログラミングコミュニティに参加しチーム開発でWEBアプリケーションの作成を行っています。
+                </p>
+                <p>mail: deeplearning408@gmail.com</p>
+                <p>tel: </p>
+                <hr class="">
+                <h4 class="">Technical Skills</h4>
+                <p class="">C</p>
+                <div class="">
+                    <div class="" style=""></div>
+                </div>
+                <p class="">Python</p>
+                <div class="">
+                    <div class="" style="">
+                        <p>- 研究にて深層学習に触れています。（ライブラリ：Tensorflow, Keras, OpenCV, Chainer, etc）</p>
+                        <p>- WEBアプリケーションの作成をしています。（フレームワーク：Django）</p>
+                    </div>
+                </div>
+                <p class="">Matlab</p>
+                <div class="">
+                    <div class="" style=""></div>
+                </div>
+                <p class="">HTML・CSS</p>
+                <div class="">
+                    <div class="" style="">
+                        <p>- WEBサイト・WEBアプリケーションのレイアウトに使用しました。</p>
+                    </div>
+                </div>
+                <p class="">JavaScript</p>
+                <div class="">
+                    <div class="" style="">
+                        <p>- WEBサイト・WEBアプリケーションのアニメーションに使用しました。</p>
+                    </div>
+                </div>
+
+                <hr class="">
+            
+                <h4 class="">WORK</h4>
+                <div class="">
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="container" id="contact">
+            <div class="content" style="max-width:600px">
+                <h4 class="center"><b>Contact Me</b></h4>
+                <p>ご連絡ください。※実際には送れません。</p>
+                <form action="" target="_blank">
+                <div class="section">
+                    <label>お名前</label><br>
+                    <input class="" type="text" name="Name" required>
+                </div>
+                <div class="section">
+                    <label>メールアドレス</label><br>
+                    <input class="" type="text" name="Email" required>
+                </div>
+                <div class="section">
+                    <label>内容</label><br>
+                    <input class="" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="">送信</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="">
+            <div class="container">
+                <h4 class="center">INFO</h4>
+                <p>よろしくお願いします。</p>
+                <p>Qiita</p>
+                <p>Github</p>
+            </div>
+            <div class="center">Presented by Kota Takahashi</div>
+        </footer>
+    
+    
+    </body>
+</html>
